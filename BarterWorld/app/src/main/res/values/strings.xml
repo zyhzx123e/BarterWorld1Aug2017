@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">BarterWorld</string>
+
+    <string name="activity_post_spinner_barter_prompt">Choose a Barter Type</string>
+    <string name="activity_self_admin_edit_barter_prompt">Choose a Barter Type</string>
+
+
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="barter_arrays">
+        <item>Services</item><!--0-->
+        <item>Goods</item><!--1-->
+        <item>Others</item><!--2-->
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_outgoing_quotes">OutgoingQuotesActivity</string>
+    <string name="activity_barter_single_barter_item_name">Barter Item Name</string>
+    <string name="activity_barter_single_barter_item_description">Barter Item Description</string>
+    <string name="activity_barter_single_owner">Owner</string>
+    <string name="activity_barter_single_post_time">Post Time</string>
+    <string name="activity_barter_single_type_of_barter">Type of Barter</string>
+    <string name="activity_barter_single_barter_value">Barter Value</string>
+    <string name="activity_barter_single_btn_quote_owner">Quote Owner</string>
+    <string name="activity_barter_single_btn_delete">Delete</string>
+    <string name="activity_barter_single_btn_comment">Comment</string>
+    <string name="activity_chat_hint_name">Name</string>
+    <string name="activity_chat_hint_title">Title</string>
+    <string name="activity_chat_btn_send">Send</string>
+    <string name="activity_login_btn_register">Register!</string>
+    <string name="activity_login_hint_password">Password</string>
+    <string name="activity_login_btn_log_in">Log In!</string>
+    <string name="activity_login_hint_email_address_used_as_login_username">Email Address (Used as Login username)</string>
+    <string name="activity_map_search_location_here">Search location here...</string>
+    <string name="activity_map_btn_click_me_register_your_barter"><![CDATA[Click me => Register Your Barter]]></string>
+    <string name="activity_map_btn_back">Back</string>
+    <string name="activity_post_btn_publish_my_barter_item">Publish My Barter Item</string>
+    <string name="activity_post_hint_barter_item_name">Barter Item Name</string>
+    <string name="activity_post_hint_barter_item_description">Barter Item Description</string>
+    <string name="activity_post_hint_barter_value">Barter Value</string>
+    <string name="activity_post_txt_latitude">Latitude:</string>
+    <string name="activity_post_txt_longtitude">Longtitude:</string>
+    <string name="activity_post_txt_lat_value">Lat...</string>
+    <string name="activity_post_txt_long_value">Long...</string>
+    <string name="activity_profile_btn_edit_my_info">Edit My Info</string>
+    <string name="activity_profile_btn_save">Save</string>
+    <string name="activity_profile_hint_your_name">Your Name</string>
+    <string name="activity_profile_hint_email_address_used_as_login_username">Email Address (Used as Login username)</string>
+    <string name="activity_profile_hint_password">Password</string>
+    <string name="activity_profile_hint_confirm_password">Confirm Password</string>
+    <string name="activity_register_btn_sign_me_up">Sign Me Up!</string>
+    <string name="activity_register_hint_your_name">Your Name</string>
+    <string name="activity_register_hint_email_address_used_as_login_username">Email Address (Used as Login username)</string>
+    <string name="activity_register_hint_password">Password</string>
+    <string name="activity_register_hint_confirm_password">Confirm Password</string>
+    <string name="activity_self_admin_edit_btn_save_content">Save Content</string>
+    <string name="activity_self_admin_edit_btn_delete_this_item">Delete This Item</string>
+    <string name="activity_self_admin_edit_hint_barter_item_name">Barter Item Name</string>
+    <string name="activity_self_admin_edit_hint_barter_value">Barter Value</string>
+    <string name="activity_self_admin_edit_txt_latitude">Latitude:</string>
+    <string name="activity_self_admin_edit_txt_longtitude">Longtitude:</string>
+    <string name="activity_self_admin_edit_txt_lat_value">Lat...</string>
+    <string name="activity_self_admin_edit_txt_long_value">Long...</string>
+    <string name="activity_self_admin_edit_hint_barter_item_description">Barter Item Description</string>
+    <string name="activity_setup_set_up_btn_my_account">Set up my account!</string>
+    <string name="activity_setup_set_up_hint_your_name">Your Name</string>
+    <string name="activity_setup_set_up_hint_email_address_used_as_login_username">Email Address (Used as Login username)</string>
+    <string name="activity_setup_set_up_hint_password">Password</string>
+    <string name="activity_setup_set_up_hint_confirm_password">Confirm Password</string>
+    <string name="barter_self_admin_row_hint_barter_title">Barter Title</string>
+    <string name="barter_self_admin_row_hint_description">Description</string>
+    <string name="chat_bubble_txt_msg">msg</string>
+    <string name="comment_row_hint_user_name">User Name</string>
+    <string name="comment_row_txt_comments">Comments...</string>
+    <string name="content_main_hint_enter_barter_name_here">Enter Barter Name here ...</string>
+    <string name="content_main_txt_goods">Goods</string>
+    <string name="content_main_txt_services">Services</string>
+    <string name="dialog_alert_alert_text">Alert Text</string>
+    <string name="dialog_alert_ok">Ok</string>
+    <string name="dialog_code_txt_system_has_generaed_a_verification_code_please_check_your_email_and_fill_in_the_verification_code_below_to_complete_your_barter_world_registration">System has generaed a verification code, Please check your Email and fill in the Verification code below to complete your Barter-World Registration</string>
+    <string name="dialog_code_hint_enter_the_verification_code_here">Enter the verification code here...</string>
+    <string name="dialog_comment_txt_you_can_comment_anything_about_this_barter_item">You can comment anything about this Barter Item:</string>
+    <string name="dialog_comment_hint_give_your_comments_here">Give your comments here...</string>
+    <string name="dialog_comment_txt_comment">Comment</string>
+    <string name="dialog_confirm_txt_alert_text">Alert Text</string>
+    <string name="dialog_confirm_txt_ok">Ok</string>
+    <string name="dialog_confirm_btn_cancel">Cancel</string>
+    <string name="fragment_outgoing_quote_txt_outgoing_quotes">Outgoing quotes</string>
+    <string name="incoming_quote_row_hint_title">Title</string>
+    <string name="incoming_quote_row_hint_description">Description</string>
+    <string name="incoming_quote_row_hint_type_of_barter">Type of Barter</string>
+    <string name="incoming_quote_row_hint_barter_value">Barter Value</string>
+    <string name="incoming_quote_row_hint_name">Name</string>
+    <string name="nav_header_main_txt_barter_world">Barter World</string>
+    <string name="nav_header_main_txt_default_android_studio_email_com">account@mail.com</string>
+    <string name="outgoing_quote_row_hint_title">Title</string>
+    <string name="outgoing_quote_row_hint_type_of_barter">Type of Barter</string>
+    <string name="outgoing_quote_row_hint_barter_value">Barter Value</string>
+    <string name="outgoing_quote_row_hint_liked_by_x_users">Liked by x users</string>
+    <string name="outgoing_quote_row_hint_owner">Owner:</string>
+    <string name="outgoing_quote_row_hint_description">Description</string>
+    <string name="post_row_hint_title">Title</string>
+    <string name="post_row_hint_description">Description</string>
+    <string name="post_row_hint_type_of_barter">Type of Barter</string>
+    <string name="post_row_hint_barter_value">Barter Value</string>
+    <string name="post_row_hint_by">By :</string>
+    <string name="post_row_hint_post_time">Post Time</string>
+    <string name="post_row_hint_likes_txt">Likes</string>
+    <string name="post_row_label_txt_likes">Likes</string>
+
+
+    <string name="main_menu_title_barter_map_post_barter"><![CDATA[Barter Map=>Post Barter]]></string>
+    <string name="main_menu_title_manage_my_barter">Manage My Barter</string>
+    <string name="main_menu_title_my_profile">My Profile</string>
+    <string name="main_menu_title_logout">Logout</string>
+    <string name="menu_main_title_search">Search</string>
+    <string name="nav_main_menu_title_my_interested_barters">My Interested Barters</string>
+    <string name="nav_main_menu_title_quotes_to_me">Quotes To Me</string>
+    <string name="nav_main_menu_title_barter_world">Barter World</string>
+    <string name="nav_main_menu_title_barter_map_post_barter"><![CDATA[Barter Map=>Post Barter]]></string>
+    <string name="nav_main_menu_title_manage_my_barter">Manage My Barter</string>
+    <string name="nav_main_menu_title_welcome_to_barter_trade">Welcome to Barter Trade</string>
+    <string name="nav_main_menu_title_profile">Profile</string>
+    <string name="nav_main_menu_title_log_out">Log Out</string>
+
+
+</resources>

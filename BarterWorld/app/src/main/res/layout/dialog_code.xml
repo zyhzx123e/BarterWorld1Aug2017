@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/dialog_code_txt_system_has_generaed_a_verification_code_please_check_your_email_and_fill_in_the_verification_code_below_to_complete_your_barter_world_registration"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/txt_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/dialog_code_hint_enter_the_verification_code_here"
+        android:inputType="text"/>
+        <!--android:drawableRight="@mipmap/error" -->
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="Register My Account"
+        android:textColor="@android:color/white" />
+</LinearLayout>

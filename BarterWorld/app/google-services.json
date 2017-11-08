@@ -1,0 +1,80 @@
+{
+  "project_info": {
+    "project_number": "538691666942",
+    "firebase_url": "https://barterworld-ad75e.firebaseio.com",
+    "project_id": "barterworld-ad75e",
+    "storage_bucket": "barterworld-ad75e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538691666942:android:4315a9294ba45fc2",
+        "android_client_info": {
+          "package_name": "com.example.jason.barterworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538691666942-udtpde8qot4p6ik4segisida3rm4674o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jason.barterworld",
+            "certificate_hash": "1aa7f4a090774ba63f196441761d2342cef7ed01"
+          }
+        },
+        {
+          "client_id": "538691666942-u1sboa58cg921lo7uarl9h33rf3q0i5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jason.barterworld",
+            "certificate_hash": "2e5db31b5b4e3852771b0b6dc7c5b28d6a79f8c8"
+          }
+        },
+        {
+          "client_id": "538691666942-vn64krallr9jd4nq7ov15d0im10km1ta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jason.barterworld",
+            "certificate_hash": "eb332d3465c5c23e4aad38eb42ba1de16d7e9b25"
+          }
+        },
+        {
+          "client_id": "538691666942-nk2hu8n011cfal1pfecqavif3b4dpcjg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jason.barterworld",
+            "certificate_hash": "dcb4da26e67827e6c8e3c1f4a7ae3dce87f9ef9f"
+          }
+        },
+        {
+          "client_id": "538691666942-2krj3dfbpj1mfecv3g6s3beve50dudua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIEpHprrKhB_97YmVZe6MhHrTiX5QB4PI"
+          //"current_key": "AIzaSyCsCHC7lTt2HVAH58qG6VIcg4nGUHhJ-ns"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538691666942-2krj3dfbpj1mfecv3g6s3beve50dudua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

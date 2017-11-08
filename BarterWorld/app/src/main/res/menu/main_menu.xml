@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single"
+        app:showAsAction="always">
+        <!--<item
+            android:id="@+id/nav_barter_add_new"
+            android:icon="@mipmap/ic_add_new_barter"
+            android:title="Post My Barter" />-->
+
+        <item
+            android:id="@+id/main_barter_map_admin"
+            android:icon="@mipmap/ic_barter_map"
+            android:title="@string/main_menu_title_barter_map_post_barter" />
+
+        <item
+            android:id="@+id/main_barter_self_admin"
+            android:icon="@mipmap/ic_measuring"
+            android:title="@string/main_menu_title_manage_my_barter" />
+
+        <item
+            android:id="@+id/main_profile_admin"
+            android:icon="@mipmap/ic_barter_profile"
+            android:title="@string/main_menu_title_my_profile" />
+
+
+
+        <item android:id="@+id/action_logout"
+            android:icon="@mipmap/ic_logout"
+            android:title="@string/main_menu_title_logout"
+           />
+
+    </group>
+
+
+
+
+
+
+
+
+</menu>

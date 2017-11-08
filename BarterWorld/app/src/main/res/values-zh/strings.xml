@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">物物世界</string>
+
+    <string name="activity_post_spinner_barter_prompt">选择物物交易种类</string>
+    <string name="activity_self_admin_edit_barter_prompt">选择物物交易种类</string>
+
+
+    <string name="navigation_drawer_open">打开指引栏</string>
+    <string name="navigation_drawer_close">关闭指引栏</string>
+
+    <string name="action_settings">设置</string>
+    <string-array name="barter_arrays">
+        <item>服务</item><!--0-->
+        <item>商品</item><!--1-->
+        <item>其他</item><!--2-->
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">你好</string>
+    <string name="title_activity_outgoing_quotes">OutgoingQuotesActivity</string>
+    <string name="activity_barter_single_barter_item_name">物物交易项目名字</string>
+    <string name="activity_barter_single_barter_item_description">物物交易项目描述</string>
+    <string name="activity_barter_single_owner">主人</string>
+    <string name="activity_barter_single_post_time">发布时间</string>
+    <string name="activity_barter_single_type_of_barter">物物交易种类</string>
+    <string name="activity_barter_single_barter_value">物物交易价值</string>
+    <string name="activity_barter_single_btn_quote_owner">联系主人</string>
+    <string name="activity_barter_single_btn_delete">删除</string>
+    <string name="activity_barter_single_btn_comment">评论</string>
+    <string name="activity_chat_hint_name">名字</string>
+    <string name="activity_chat_hint_title">标题</string>
+    <string name="activity_chat_btn_send">发送</string>
+    <string name="activity_login_btn_register">注册!</string>
+    <string name="activity_login_hint_password">密码</string>
+    <string name="activity_login_btn_log_in">登录!</string>
+    <string name="activity_login_hint_email_address_used_as_login_username">邮箱地址(登录时须填写)</string>
+    <string name="activity_map_search_location_here">在这里查找地点...</string>
+    <string name="activity_map_btn_click_me_register_your_barter">点这里 => 发布你的物物项目></string>
+    <string name="activity_map_btn_back">返回</string>
+    <string name="activity_post_btn_publish_my_barter_item">发布我的物物项目</string>
+    <string name="activity_post_hint_barter_item_name">物物名字</string>
+    <string name="activity_post_hint_barter_item_description">物物项目描述</string>
+    <string name="activity_post_hint_barter_value">物物项目价值</string>
+    <string name="activity_post_txt_latitude">纬度:</string>
+    <string name="activity_post_txt_longtitude">经度:</string>
+    <string name="activity_post_txt_lat_value">纬度...</string>
+    <string name="activity_post_txt_long_value">经度...</string>
+    <string name="activity_profile_btn_edit_my_info">编辑我的信息</string>
+    <string name="activity_profile_btn_save">保存</string>
+    <string name="activity_profile_hint_your_name">名字</string>
+    <string name="activity_profile_hint_email_address_used_as_login_username">邮箱地址(登录时须填写)</string>
+    <string name="activity_profile_hint_password">密码</string>
+    <string name="activity_profile_hint_confirm_password">确定密码</string>
+    <string name="activity_register_btn_sign_me_up">注册!</string>
+    <string name="activity_register_hint_your_name">名字</string>
+    <string name="activity_register_hint_email_address_used_as_login_username">邮箱地址(登录时须填写)</string>
+    <string name="activity_register_hint_password">密码</string>
+    <string name="activity_register_hint_confirm_password">确定密码</string>
+    <string name="activity_self_admin_edit_btn_save_content">保存</string>
+    <string name="activity_self_admin_edit_btn_delete_this_item">删掉此项目</string>
+    <string name="activity_self_admin_edit_hint_barter_item_name">物物名字</string>
+    <string name="activity_self_admin_edit_hint_barter_value">物物项目价值</string>
+    <string name="activity_self_admin_edit_txt_latitude">纬度:</string>
+    <string name="activity_self_admin_edit_txt_longtitude">经度:</string>
+    <string name="activity_self_admin_edit_txt_lat_value">纬度...</string>
+    <string name="activity_self_admin_edit_txt_long_value">经度...</string>
+    <string name="activity_self_admin_edit_hint_barter_item_description">物物项目描述</string>
+    <string name="activity_setup_set_up_btn_my_account">设立我的账号!</string>
+    <string name="activity_setup_set_up_hint_your_name">名字</string>
+    <string name="activity_setup_set_up_hint_email_address_used_as_login_username">邮箱地址(登录时须填写)</string>
+    <string name="activity_setup_set_up_hint_password">密码</string>
+    <string name="activity_setup_set_up_hint_confirm_password">确定密码</string>
+    <string name="barter_self_admin_row_hint_barter_title">物物名字</string>
+    <string name="barter_self_admin_row_hint_description">物物项目描述</string>
+    <string name="chat_bubble_txt_msg">信息</string>
+    <string name="comment_row_hint_user_name">用户名</string>
+    <string name="comment_row_txt_comments">评论...</string>
+    <string name="content_main_hint_enter_barter_name_here">在这里输入物物项目名字 ...</string>
+    <string name="content_main_txt_goods">商品</string>
+    <string name="content_main_txt_services">服务</string>
+    <string name="dialog_alert_alert_text">提示信息</string>
+    <string name="dialog_alert_ok">好</string>
+    <string name="dialog_code_txt_system_has_generaed_a_verification_code_please_check_your_email_and_fill_in_the_verification_code_below_to_complete_your_barter_world_registration">系统生成了一个验证码 并发到了您所填写的邮箱里， 请查看您的邮箱 然后在这里填写您在邮箱看到的验证码， 从而完成物物世界账号注册， 谢谢您！</string>
+    <string name="dialog_code_hint_enter_the_verification_code_here">在这里输入验证码...</string>
+    <string name="dialog_comment_txt_you_can_comment_anything_about_this_barter_item">你可以对此项目发表任何评论</string>
+    <string name="dialog_comment_hint_give_your_comments_here">在这里发表你的评论...</string>
+    <string name="dialog_comment_txt_comment">评论</string>
+    <string name="dialog_confirm_txt_alert_text">提示信息</string>
+    <string name="dialog_confirm_txt_ok">好</string>
+    <string name="dialog_confirm_btn_cancel">取消</string>
+    <string name="fragment_outgoing_quote_txt_outgoing_quotes">发出的信息</string>
+    <string name="incoming_quote_row_hint_title">项目名</string>
+    <string name="incoming_quote_row_hint_description">物物项目描述</string>
+    <string name="incoming_quote_row_hint_type_of_barter">物物交易种类</string>
+    <string name="incoming_quote_row_hint_barter_value">物物价值</string>
+    <string name="incoming_quote_row_hint_name">名字</string>
+    <string name="nav_header_main_txt_barter_world">物物世界</string>
+    <string name="nav_header_main_txt_default_android_studio_email_com">account@mail.com</string>
+    <string name="outgoing_quote_row_hint_title">项目名</string>
+    <string name="outgoing_quote_row_hint_type_of_barter">物物交易种类</string>
+    <string name="outgoing_quote_row_hint_barter_value">物物价值</string>
+    <string name="outgoing_quote_row_hint_liked_by_x_users">被 x 人赞过</string>
+    <string name="outgoing_quote_row_hint_owner">主人:</string>
+    <string name="outgoing_quote_row_hint_description">物物项目描述</string>
+    <string name="post_row_hint_title">项目名</string>
+    <string name="post_row_hint_description">物物项目描述</string>
+    <string name="post_row_hint_type_of_barter">物物交易种类</string>
+    <string name="post_row_hint_barter_value">物物价值</string>
+    <string name="post_row_hint_by">发布人 :</string>
+    <string name="post_row_hint_post_time">发布时间</string>
+    <string name="post_row_hint_likes_txt">赞</string>
+    <string name="post_row_label_txt_likes">赞</string>
+
+
+
+
+    <string name="main_menu_title_barter_map_post_barter">物物地图=>发布我的项目</string>
+    <string name="main_menu_title_manage_my_barter">管理我的物物项目</string>
+    <string name="main_menu_title_my_profile">我的资料</string>
+    <string name="main_menu_title_logout">退出</string>
+    <string name="menu_main_title_search">搜索</string>
+    <string name="nav_main_menu_title_my_interested_barters">我感兴趣的项目</string>
+    <string name="nav_main_menu_title_quotes_to_me">收件箱</string>
+    <string name="nav_main_menu_title_barter_world">物物世界</string>
+    <string name="nav_main_menu_title_barter_map_post_barter">物物地图=>发布我的项目</string>
+    <string name="nav_main_menu_title_manage_my_barter">管理我的物物项目</string>
+    <string name="nav_main_menu_title_welcome_to_barter_trade">欢迎来到物物交易世界</string>
+    <string name="nav_main_menu_title_profile">我的资料</string>
+    <string name="nav_main_menu_title_log_out">退出</string>
+</resources>

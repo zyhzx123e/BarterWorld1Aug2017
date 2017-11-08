@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_barter_single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jason.barterworld.BarterSingleActivity">
+
+    <TextView
+        android:text="Barter Item Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barter_img"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/barter_title"
+        android:background="@drawable/tw__login_btn_pressed_light"
+        android:paddingLeft="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:text="Barter Item Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barter_description"
+        android:background="@drawable/tw__login_btn_pressed_light"
+        android:paddingLeft="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/barter_title"
+        android:layout_alignRight="@+id/barter_img"
+        android:layout_alignEnd="@+id/barter_img"
+        android:lines="3" />
+
+    <TextView
+        android:text="User Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barter_description"
+        android:layout_alignLeft="@+id/barter_title"
+        android:layout_alignStart="@+id/barter_title"
+        android:layout_marginTop="18dp"
+        android:id="@+id/barter_owner" />
+
+    <TextView
+        android:text="Post Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/barter_owner"
+        android:layout_alignRight="@+id/barter_title"
+        android:layout_alignEnd="@+id/barter_title"
+        android:id="@+id/barter_post_time" />
+
+    <TextView
+        android:text="Type of Barter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barter_owner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/barter_type"
+        android:background="@drawable/txt_box"
+        android:padding="5dp" />
+
+    <TextView
+        android:text="Barter Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/barter_type"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/barter_value"
+        android:padding="5dp"
+        android:background="@drawable/txt_box" />
+
+    <ImageView
+        android:id="@+id/barter_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:maxHeight="150dp"
+        android:padding="2dp"
+        app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+    <Button
+        android:id="@+id/btn_quote"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/barter_owner"
+        android:layout_alignStart="@+id/barter_owner"
+        android:layout_below="@+id/barter_type"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:padding="3dp"
+        android:text="Quote Owner" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/barter_value"
+        android:layout_alignStart="@+id/barter_value"
+        android:layout_below="@+id/barter_value"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/idp_button_background_email"
+        android:padding="3dp"
+        android:text="Delete"
+        android:visibility="invisible" />
+</RelativeLayout>

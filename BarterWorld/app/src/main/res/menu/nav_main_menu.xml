@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/nav_barter_add_new"
+            android:icon="@mipmap/ic_add_new_barter"
+            android:title="Post My Barter" />-->
+        <item
+            android:id="@+id/nav_interested_barters"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@mipmap/ic_barater_goods"
+            android:title="@string/nav_main_menu_title_my_interested_barters" />
+        <item
+            android:id="@+id/nav_quotes_to_me"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@mipmap/ic_barter_quote"
+            android:title="@string/nav_main_menu_title_quotes_to_me" />
+
+        <item
+            android:id="@+id/nav_barter_world"
+            android:icon="@mipmap/ic_barter_world"
+            android:title="@string/nav_main_menu_title_barter_world" />
+        <item
+            android:id="@+id/nav_barter_map"
+            android:icon="@mipmap/ic_barter_map"
+            android:title="@string/nav_main_menu_title_barter_map_post_barter" />
+
+        <item
+            android:id="@+id/nav_barter_self_admin"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@mipmap/ic_measuring"
+            android:title="@string/nav_main_menu_title_manage_my_barter" />
+
+    </group>
+
+    <item android:title="@string/nav_main_menu_title_welcome_to_barter_trade">
+        <menu>
+            <item
+                android:id="@+id/nav_barter_profile"
+                android:icon="@mipmap/ic_barter_profile"
+                android:title="@string/nav_main_menu_title_profile" />
+            <item
+                android:id="@+id/nav_barter_logout"
+                android:icon="@mipmap/ic_barter_logout"
+                android:title="@string/nav_main_menu_title_log_out" />
+        </menu>
+    </item>
+
+
+
+</menu>

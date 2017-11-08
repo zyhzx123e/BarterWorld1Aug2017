@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_barter_single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jason.barterworld.BarterSingleActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/barter_title"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tw__login_btn_pressed_light"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/activity_barter_single_barter_item_name"
+        app:layout_constraintLeft_toRightOf="@+id/barter_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/barter_description"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tw__login_btn_pressed_light"
+        android:lines="3"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:text="@string/activity_barter_single_barter_item_description"
+        app:layout_constraintLeft_toRightOf="@+id/barter_img"
+        app:layout_constraintTop_toBottomOf="@+id/barter_title"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/barter_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/activity_barter_single_owner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barter_img"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/barter_post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/activity_barter_single_post_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barter_owner"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/barter_type"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/txt_box"
+        android:padding="5dp"
+        android:text="@string/activity_barter_single_type_of_barter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barter_owner"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <TextView
+        android:id="@+id/barter_value"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/txt_box"
+        android:padding="5dp"
+        android:text="@string/activity_barter_single_barter_value"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barter_type"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <ImageView
+        android:id="@+id/barter_img"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:maxHeight="150dp"
+        android:padding="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <Button
+        android:id="@+id/btn_quote"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:padding="3dp"
+        android:text="@string/activity_barter_single_btn_quote_owner"
+        app:layout_constraintBottom_toBottomOf="@+id/barter_value"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/idp_button_background_email"
+        android:padding="3dp"
+        android:text="@string/activity_barter_single_btn_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_quote"
+        app:layout_constraintRight_toRightOf="@+id/barter_img"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/com_facebook_button_like_background"
+        android:padding="3dp"
+        android:text="@string/activity_barter_single_btn_comment"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_quote"
+        app:layout_constraintRight_toRightOf="@+id/barter_img"
+         />
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/barter_comment_content_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintBottom_creator="1"
+
+
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_quote"
+
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
+        > </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_recycler_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/barter_comment_content_frame"
+        app:layout_constraintRight_toRightOf="@+id/barter_comment_content_frame"
+        app:layout_constraintTop_toTopOf="@+id/barter_comment_content_frame"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

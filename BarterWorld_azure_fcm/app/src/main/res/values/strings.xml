@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BarterWorld</string>
+
+    <string name="barter_prompt">Choose a Barter Type</string>
+
+
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="barter_arrays">
+        <item>Services</item>
+        <item>Goods</item>
+        <item>Others</item>
+
+    </string-array>
+</resources>

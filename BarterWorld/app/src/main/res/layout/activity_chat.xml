@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jason.barterworld.ChatActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/form_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#91f1f1f1"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+
+            android:layout_margin="5dp"
+            android:maxHeight="150dp"
+            android:minHeight="100dp"
+
+            android:scaleType="fitCenter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/activity_chat_hint_name"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp"
+
+            android:textStyle="normal|bold"
+            app:layout_constraintLeft_toRightOf="@+id/user_img"
+            app:layout_constraintTop_toTopOf="@+id/user_img" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/chat_guideline_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+
+        <ImageView
+            android:id="@+id/img_post"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+
+
+            android:layout_margin="5dp"
+
+            android:scaleType="fitCenter"
+            app:layout_constraintLeft_toRightOf="@+id/chat_guideline_middle"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:drawable/ic_menu_camera" />
+
+        <TextView
+            android:id="@+id/txt_post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="@string/activity_chat_hint_title"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+
+            android:paddingTop="5dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:textSize="9sp"
+            android:textStyle="normal"
+            app:layout_constraintLeft_toRightOf="@+id/img_post"
+            app:layout_constraintTop_toTopOf="@+id/img_post"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/chat_content_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/form"
+        app:layout_constraintLeft_toLeftOf="@+id/form_top"
+        app:layout_constraintRight_toRightOf="@+id/form_top"
+        app:layout_constraintTop_toBottomOf="@+id/form_top"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginTop="2dp"
+        tools:layout_constraintLeft_creator="1"></FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycler_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_content_frame"
+        app:layout_constraintLeft_toLeftOf="@+id/chat_content_frame"
+        app:layout_constraintRight_toRightOf="@+id/chat_content_frame"
+        app:layout_constraintTop_toTopOf="@+id/chat_content_frame"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#91f1f1f1"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteY="467dp">
+
+
+        <EditText
+            android:id="@+id/txt_msg_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/button1"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:maxHeight="80dp" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/send"
+            android:text="@string/activity_chat_btn_send" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
