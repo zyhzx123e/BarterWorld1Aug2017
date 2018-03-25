@@ -1,5 +1,6 @@
 package json.retrofit.jason.json_webservice;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -9,12 +10,15 @@ import com.google.gson.annotations.SerializedName;
 public class User {
 
     @SerializedName("user_name")
+    @Expose
     private String user_name;
 
     @SerializedName("user_email")
+    @Expose
     private String user_email;
 
     @SerializedName("user_pwd")
+    @Expose
     private String user_pwd;
 
     public User(){}

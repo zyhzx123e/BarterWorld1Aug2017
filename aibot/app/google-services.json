@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "41078612214",
+    "firebase_url": "https://aihrbot-1015e.firebaseio.com",
+    "project_id": "aihrbot-1015e",
+    "storage_bucket": "aihrbot-1015e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41078612214:android:b0956a47d37364c9",
+        "android_client_info": {
+          "package_name": "ai.bot.hr.aibot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41078612214-2tvmsborq206crmbp4kt3c5o3m8ps2kj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpjV6yTVuu-J0iymf4C99752E_iT49Qf8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

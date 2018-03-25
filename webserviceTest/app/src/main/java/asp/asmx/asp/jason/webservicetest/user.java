@@ -1,13 +1,20 @@
 package asp.asmx.asp.jason.webservicetest;
 
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+
 /**
  * Created by User on 10/21/2017.
  */
 
+@Root(name = "User")
 public class user {
 
+    @Element(name = "User_name")
     private String User_name;
+    @Element(name = "User_email")
     private String User_email;
+    @Element(name = "User_pwd")
     private String User_pwd;
 
     public user(){}

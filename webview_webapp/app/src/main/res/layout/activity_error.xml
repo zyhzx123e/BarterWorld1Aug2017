@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context="webview_webapp.jason.webview.ErrorActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="222dp"
+        android:layout_height="141dp"
+        android:layout_margin="10px"
+        android:ellipsize="middle"
+        android:fontFamily="casual"
+        android:padding="10px"
+        android:text="Sorry, something went wrong, we are trying our best to connect."
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/retry"
+        android:textColor="@android:color/background_light"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/btn_exit"
+        android:onClick="btn_retry_click"/>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:onClick="btn_exit_click"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/exit"
+        android:textColor="@android:color/background_light"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="@+id/textView" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Traveller</string>
+    <string name="main_activity_loading_string">Loading...</string>
+    <string name="ErrorActivity_connection_str">Please Check Internet Connection!</string>
+    <string name="error_activity_somethingwrong">Something Went Wrong...</string>
+    <string name="retry">Retry</string>
+    <string name="exit">Exit</string>
+</resources>

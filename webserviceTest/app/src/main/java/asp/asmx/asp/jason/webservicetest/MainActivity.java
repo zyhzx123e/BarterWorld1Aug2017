@@ -1,5 +1,6 @@
 package asp.asmx.asp.jason.webservicetest;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -78,6 +79,13 @@ public class MainActivity extends AppCompatActivity   {
                                 super.onPostExecute(aVoid);
                                 if(user_pwd_get_from_web!=null) {
                                     Toast.makeText(MainActivity.this, "retrived pwd for " + str_uid + ": " + user_pwd_get_from_web, Toast.LENGTH_SHORT).show();
+
+
+
+                                    if(txt_pwd.getText().toString().trim().equals(user_pwd_get_from_web)){
+                                        Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                                        startActivity(intent);
+                                    }
                                     user_pwd_get_from_web=null;
                                 }
 

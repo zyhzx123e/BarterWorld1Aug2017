@@ -30,7 +30,7 @@ When you specify @GET("foobar?"), Retrofit thinks you already gave some query pa
 Remove the ? will get the desired result.
         * */
 
-        @GET("/getSpecificUser_json")
-        Call<List<User>> getUser(@Query("user_name") String user);
+        @GET("/getAllUsers_json")
+        Call<List<User>> getAllUsers();
 
 }

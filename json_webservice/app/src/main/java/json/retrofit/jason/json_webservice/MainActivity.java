@@ -2,6 +2,8 @@ package json.retrofit.jason.json_webservice;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,10 +19,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText txtEmail;
-    private EditText txtPwd;
-    private Button btn_login;
 
+    private RecyclerView recyclerView;
+    private RecyclerAdapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+    private List<User> user;
+    private UserInterface userInterface;
+
+
+    Retrofit retrofit = new Retrofit.Builder().baseUrl("http://webservicebarter-001-site1.1tempurl.com/Webservice.asmx/").addConverterFactory(GsonConverterFactory.create()).build();
 
 
     @Override
@@ -28,72 +35,56 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtEmail=(EditText)findViewById(R.id.txt_email);
-        txtPwd=(EditText)findViewById(R.id.txt_pwd);
-        btn_login=(Button)findViewById(R.id.btn_login);
+
+        recyclerView=(RecyclerView)findViewById(R.id.user_recyclerview);
+        layoutManager=new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
+
+      //  Retrofit retrofit = new Retrofit.Builder().baseUrl("https://barterworld-ad75e.firebaseio.com/").addConverterFactory(GsonConverterFactory.create()).build();
+
+        UserInterface api_interface_user = retrofit.create(UserInterface.class);
 
 
 
-        final Retrofit retrofit = new Retrofit.Builder().baseUrl("http://webservicebarter-001-site1.1tempurl.com/Webservice.asmx/")
-                .addConverterFactory(GsonConverterFactory.create()).build();
+      //  final Retrofit retrofit = new Retrofit.Builder().baseUrl("http://webservicebarter-001-site1.1tempurl.com/Webservice.asmx/").addConverterFactory(GsonConverterFactory.create()).build();
 
 
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        //https://barterworld-ad75e.firebaseio.com/Admin/.json
 
 
-                final String uid = txtEmail.getText().toString();
 
 
-                UserInterface api_interface_user =
-                       retrofit.create(UserInterface.class);
+             //   UserInterface api_interface_user = retrofit.create(UserInterface.class);
 
 
-                Call<List <User>> call = api_interface_user.getUser(uid);
+                Call<List <User>> call = api_interface_user.getAllUsers();
 
                 call.enqueue(new Callback<List<User>>() {
                     @Override
                     public void onResponse(Call<List<User>> call, Response<List<User>> response) {
 
                         Toast.makeText(MainActivity.this, "response: "+response.toString()+  " raw: "+response, Toast.LENGTH_LONG).show();
-                        if(response!=null && response.isSuccessful()) {
-                            User user = response.body().get(0);
+
+                            user = response.body();
+                            adapter=new RecyclerAdapter(user);
+                            recyclerView.setAdapter(adapter);
 
 
-                            String get_pwd=user.getUser_pwd().toString();
+                        if(response==null || !response.isSuccessful()) {
 
-                            if(get_pwd.equals(txtPwd.getText().toString().trim())){
-
-                                Toast.makeText(MainActivity.this, "The retrived Email: "+user.getUser_email(), Toast.LENGTH_SHORT).show();
-
-                            }else{
-
-                                Toast.makeText(MainActivity.this, "Invalid Credential! ", Toast.LENGTH_SHORT).show();
-
-                            }
-
-
-
-                        }else{
                             Toast.makeText(MainActivity.this, "Failed...", Toast.LENGTH_SHORT).show();
                         }
                         }
 
                     @Override
                     public void onFailure(Call<List<User>> call, Throwable t) {
-
+                        Toast.makeText(MainActivity.this, "on Failed...", Toast.LENGTH_SHORT).show();
                     }
                 });
 
 
-
-
-
-
-            }
-        });
 
 
 
